@@ -313,6 +313,182 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/23/luogu4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵宇">
+      <meta itemprop="description" content="君子乾乾,终日,夕惕若厉,无咎。">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zhaoyu-blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/23/luogu4/" class="post-title-link" itemprop="url">洛谷-新手村，1-4</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-23 10:54:27 / 修改时间：10:55:14" itemprop="dateCreated datePublished" datetime="2019-07-23T10:54:27+08:00">2019-07-23</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/编程语言/" itemprop="url" rel="index"><span itemprop="name">编程语言</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="1-P1046-陶陶摘苹果"><a href="#1-P1046-陶陶摘苹果" class="headerlink" title="(1) P1046 陶陶摘苹果"></a>(1) P1046 陶陶摘苹果</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">10</span>],n,i,c=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)</span><br><span class="line">	   <span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[i]&lt;=(n+<span class="number">30</span>))&#123;</span><br><span class="line">			c++;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;c;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题源"><a href="#题源" class="headerlink" title="题源"></a><a href="https://www.luogu.org/problemnew/show/P1046" target="_blank" rel="noopener">题源</a></h2><h4 id="2-P1047-校门外的树"><a href="#2-P1047-校门外的树" class="headerlink" title="(2) P1047 校门外的树"></a>(2) P1047 校门外的树</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> m,n,i,c=<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">10009</span>];</span><br><span class="line">	<span class="keyword">for</span>(c=<span class="number">0</span>;c&lt;=n;c++)&#123;</span><br><span class="line">		a[c]=<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> x,y,t;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">    	<span class="built_in">cin</span>&gt;&gt;x&gt;&gt;y;</span><br><span class="line">    	<span class="keyword">for</span>(t=x;t&lt;=y;t++)&#123;</span><br><span class="line">    	   a[t]=<span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> s=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(c=<span class="number">0</span>;c&lt;=n;c++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[c]==<span class="number">1</span>) s++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;s;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题源-1"><a href="#题源-1" class="headerlink" title="题源"></a><a href="https://www.luogu.org/problemnew/show/P1047" target="_blank" rel="noopener">题源</a></h2><h4 id="3-P1427-小鱼的数字游戏"><a href="#3-P1427-小鱼的数字游戏" class="headerlink" title="(3) P1427 小鱼的数字游戏"></a>(3) P1427 小鱼的数字游戏</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">109</span>];</span><br><span class="line">	<span class="keyword">int</span> n,i=<span class="number">0</span>,t;</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;n)&#123;</span><br><span class="line">		<span class="keyword">if</span>(n==<span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">		a[i]=n;</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(t=i<span class="number">-1</span>;t&gt;=<span class="number">0</span>;t--)&#123;</span><br><span class="line">		<span class="keyword">if</span>(t&gt;<span class="number">0</span>) <span class="built_in">cout</span>&lt;&lt;a[t]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">		<span class="keyword">if</span>(t==<span class="number">0</span>) <span class="built_in">cout</span>&lt;&lt;a[t];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题源-2"><a href="#题源-2" class="headerlink" title="题源"></a><a href="https://www.luogu.org/problemnew/show/P1427" target="_blank" rel="noopener">题源</a></h2><h4 id="4-P1428-小鱼比可爱"><a href="#4-P1428-小鱼比可爱" class="headerlink" title="(4) P1428 小鱼比可爱"></a>(4) P1428 小鱼比可爱</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,i;</span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">100</span>],b[<span class="number">100</span>];</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">	   <span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">	<span class="keyword">int</span> t,c;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">		c=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(t=<span class="number">0</span>;t&lt;=i;t++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(a[i]&gt;a[t]) c++;</span><br><span class="line">		&#125;</span><br><span class="line">		b[i]=c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(i&lt;n<span class="number">-1</span>) <span class="built_in">cout</span>&lt;&lt;b[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">		<span class="keyword">if</span>(i&gt;=n<span class="number">-1</span>) <span class="built_in">cout</span>&lt;&lt;b[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题源-3"><a href="#题源-3" class="headerlink" title="题源"></a><a href="https://www.luogu.org/problemnew/show/P1428" target="_blank" rel="noopener">题源</a></h2><h4 id="5-P2141-珠心算测验"><a href="#5-P2141-珠心算测验" class="headerlink" title="(5) P2141 珠心算测验"></a>(5) P2141 珠心算测验</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,i,t,s=<span class="number">0</span>,j,p;</span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">100</span>],b[<span class="number">100</span>];</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">		b[i]=a[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n<span class="number">-1</span>;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(t=i+<span class="number">1</span>;t&lt;n;t++)&#123;</span><br><span class="line">			j=a[i]+a[t];</span><br><span class="line">			<span class="keyword">for</span>(p=<span class="number">0</span>;p&lt;n;p++)&#123;</span><br><span class="line">				<span class="keyword">if</span>(b[p]==j&amp;&amp;p!=i&amp;&amp;p!=t)&#123;</span><br><span class="line">					s++;b[p]=<span class="number">0</span>;</span><br><span class="line">				&#125;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;s;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">思路</span></span><br><span class="line"><span class="comment">这一题乍一看挺简单</span></span><br><span class="line"><span class="comment">用三次for循环就可以解决。</span></span><br><span class="line"><span class="comment">但是里面有个坑：去重。</span></span><br><span class="line"><span class="comment">比如说输入5个数：1 2 3 4 5</span></span><br><span class="line"><span class="comment">这里的去重不是简单意义上的1，4和4，1的重复</span></span><br><span class="line"><span class="comment">而是1+4和2+3都等于5的重复。</span></span><br><span class="line"><span class="comment">因此，我们使用两个数组a[]和b[]</span></span><br><span class="line"><span class="comment">从a[]中取两数相加，与b[]中的元素比较</span></span><br><span class="line"><span class="comment">比如在a中选择1+4，在b中找到5，然后将5置零</span></span><br><span class="line"><span class="comment">这样在2+3的时候，b中不存在5</span></span><br><span class="line"><span class="comment">因此解决了去重问题。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="题源-4"><a href="#题源-4" class="headerlink" title="题源"></a><a href="https://www.luogu.org/problemnew/show/P2141" target="_blank" rel="noopener">题源</a></h2><h4 id="6-P1567-统计天数"><a href="#6-P1567-统计天数" class="headerlink" title="(6) P1567 统计天数"></a>(6) P1567 统计天数</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">10000000</span>];</span><br><span class="line"><span class="keyword">int</span> b[<span class="number">10000000</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,m,i,t=<span class="number">0</span>,c=<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n<span class="number">-1</span>;i++)&#123;</span><br><span class="line">       <span class="keyword">if</span>(a[i]&lt;a[i+<span class="number">1</span>])&#123;</span><br><span class="line">       	c++;</span><br><span class="line">	   &#125;</span><br><span class="line">	   <span class="keyword">if</span>(a[i]&gt;=a[i+<span class="number">1</span>])&#123;</span><br><span class="line">	   	b[t]=c;</span><br><span class="line">	   	t++;c=<span class="number">1</span>;</span><br><span class="line">	   &#125;</span><br><span class="line">	&#125;</span><br><span class="line">	m=b[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;t;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(b[i]&gt;m) m=b[i];</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;m;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题源-5"><a href="#题源-5" class="headerlink" title="题源"></a><a href="https://www.luogu.org/problemnew/show/P1567" target="_blank" rel="noopener">题源</a></h2>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/23/luogu3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1184,7 +1360,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
