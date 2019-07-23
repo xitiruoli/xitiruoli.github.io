@@ -313,6 +313,180 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/23/luogu3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵宇">
+      <meta itemprop="description" content="君子乾乾,终日,夕惕若厉,无咎。">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zhaoyu-blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/23/luogu3/" class="post-title-link" itemprop="url">洛谷-新手村，1-3</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-23 10:37:15 / 修改时间：10:36:40" itemprop="dateCreated datePublished" datetime="2019-07-23T10:37:15+08:00">2019-07-23</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/编程语言/" itemprop="url" rel="index"><span itemprop="name">编程语言</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="1-P1008-三连击"><a href="#1-P1008-三连击" class="headerlink" title="(1) P1008 三连击"></a>(1) P1008 三连击</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">"192"</span>&lt;&lt;<span class="string">" "</span>&lt;&lt;<span class="string">"384"</span>&lt;&lt;<span class="string">" "</span>&lt;&lt;<span class="string">"576"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">"219"</span>&lt;&lt;<span class="string">" "</span>&lt;&lt;<span class="string">"438"</span>&lt;&lt;<span class="string">" "</span>&lt;&lt;<span class="string">"657"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">"273"</span>&lt;&lt;<span class="string">" "</span>&lt;&lt;<span class="string">"546"</span>&lt;&lt;<span class="string">" "</span>&lt;&lt;<span class="string">"819"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">"327"</span>&lt;&lt;<span class="string">" "</span>&lt;&lt;<span class="string">"654"</span>&lt;&lt;<span class="string">" "</span>&lt;&lt;<span class="string">"981"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">192 384 576</span></span><br><span class="line"><span class="comment">219 438 657</span></span><br><span class="line"><span class="comment">273 546 819</span></span><br><span class="line"><span class="comment">327 654 981</span></span><br><span class="line"><span class="comment">本题为提交答案题，您可以写程序或手算在本机上算出答案后，直接提交答案文本也可提交答案生成程序。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题源"><a href="#题源" class="headerlink" title="题源"></a><a href="https://www.luogu.org/problemnew/show/P1008" target="_blank" rel="noopener">题源</a></h2><h4 id="2-P1035-级数求和"><a href="#2-P1035-级数求和" class="headerlink" title="(2) P1035 级数求和"></a>(2) P1035 级数求和</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> n=<span class="number">1</span>,k,i;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;k;</span><br><span class="line">	<span class="keyword">double</span> s=<span class="number">0.0</span>;</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">    	s=s+<span class="number">1</span>/n;</span><br><span class="line">    	<span class="comment">//cout&lt;&lt;n&lt;&lt;" "&lt;&lt;s&lt;&lt;endl;</span></span><br><span class="line">    	<span class="keyword">if</span>(s&gt;k)&#123;</span><br><span class="line">    		i=n;</span><br><span class="line">    		<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		n++;</span><br><span class="line">	&#125;		</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;i;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题源-1"><a href="#题源-1" class="headerlink" title="题源"></a><a href="https://www.luogu.org/problemnew/show/P1035" target="_blank" rel="noopener">题源</a></h2><h4 id="3-P1423-小玉在游泳"><a href="#3-P1423-小玉在游泳" class="headerlink" title="(3) P1423 小玉在游泳"></a>(3) P1423 小玉在游泳</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> s=<span class="number">0.0</span>,n=<span class="number">2.0</span>,m;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;m;</span><br><span class="line">	<span class="keyword">int</span> i=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">		s+=n;</span><br><span class="line">		i++;</span><br><span class="line">		n=n*<span class="number">0.98</span>;</span><br><span class="line">		<span class="keyword">if</span>(s&gt;m) <span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;i;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题源-2"><a href="#题源-2" class="headerlink" title="题源"></a><a href="https://www.luogu.org/problemnew/show/P1423" target="_blank" rel="noopener">题源</a></h2><h4 id="4-P1424-小鱼的航程-改进版"><a href="#4-P1424-小鱼的航程-改进版" class="headerlink" title="(4) P1424 小鱼的航程(改进版)"></a>(4) P1424 小鱼的航程(改进版)</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> x,c;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;x&gt;&gt;n;</span><br><span class="line">	<span class="keyword">int</span> s=<span class="number">0</span>,i;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(x%<span class="number">7</span>==<span class="number">6</span>||x%<span class="number">7</span>==<span class="number">0</span>) &#123;<span class="comment">//if(x%6==0||x%7==0)这样表示的话会出错;(例如12,为下周五但%6==0)所以此无法表示周六,应为除7余6表示周六 </span></span><br><span class="line">			s=s;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> s+=<span class="number">250</span>;</span><br><span class="line">		x++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;s;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题源-3"><a href="#题源-3" class="headerlink" title="题源"></a><a href="https://www.luogu.org/problemnew/show/P1424" target="_blank" rel="noopener">题源</a></h2><h4 id="5-P1980-计数问题"><a href="#5-P1980-计数问题" class="headerlink" title="(5) P1980 计数问题"></a>(5) P1980 计数问题</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i,n,x,c=<span class="number">0</span>,t,m;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;x;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		m=i;</span><br><span class="line">		<span class="keyword">while</span>(m!=<span class="number">0</span>)&#123;</span><br><span class="line">			t=m%<span class="number">10</span>;</span><br><span class="line">			<span class="comment">//cout&lt;&lt;t&lt;&lt;endl;</span></span><br><span class="line">			<span class="keyword">if</span>(t==x)&#123;</span><br><span class="line">				c++;</span><br><span class="line">				<span class="comment">//cout&lt;&lt;c&lt;&lt;endl;</span></span><br><span class="line">			&#125;</span><br><span class="line">			m=m/<span class="number">10</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;c;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题源-4"><a href="#题源-4" class="headerlink" title="题源"></a><a href="https://www.luogu.org/problemnew/show/P1980" target="_blank" rel="noopener">题源</a></h2>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/23/lougu2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1010,7 +1184,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
