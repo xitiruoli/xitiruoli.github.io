@@ -313,6 +313,170 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/04/vs code/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵宇">
+      <meta itemprop="description" content="君子乾乾,终日,夕惕若厉,无咎。">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zhaoyu-blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/04/vs code/" class="post-title-link" itemprop="url">vs code 的配置文件</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-04 21:28:27 / 修改时间：21:42:20" itemprop="dateCreated datePublished" datetime="2019-08-04T21:28:27+08:00">2019-08-04</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/其它/" itemprop="url" rel="index"><span itemprop="name">其它</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br></pre></td><td class="code"><pre><span class="line">//c_cpp_properties.json//文件名(1)</span><br><span class="line">&#123;</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Win32&quot;,</span><br><span class="line">            &quot;includePath&quot;: [</span><br><span class="line">                &quot;$&#123;workspaceFolder&#125;/**&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;defines&quot;: [</span><br><span class="line">                &quot;_DEBUG&quot;,</span><br><span class="line">                &quot;UNICODE&quot;,</span><br><span class="line">                &quot;_UNICODE&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;compilerPath&quot;: &quot;C:\\mingw64\\bin\\gdb.exe&quot;,</span><br><span class="line">            &quot;cStandard&quot;: &quot;c11&quot;,</span><br><span class="line">            &quot;cppStandard&quot;: &quot;c++17&quot;,</span><br><span class="line">            &quot;intelliSenseMode&quot;: &quot;clang-x64&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    &quot;version&quot;: 4</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//head.h//文件名(2)</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">static void before(void) __attribute__((constructor));</span><br><span class="line">static void after(void) __attribute__((destructor));</span><br><span class="line">static void middle(void);</span><br><span class="line">static void before()</span><br><span class="line">&#123;</span><br><span class="line">    system(&quot;chcp 65001&quot;); //切换字符集</span><br><span class="line">    system(&quot;cls&quot;);</span><br><span class="line">&#125;</span><br><span class="line">static void after()</span><br><span class="line">&#123;</span><br><span class="line">    system(&quot;echo.&quot;);</span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//launch.json//文件名(3)</span><br><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">     &quot;configurations&quot;: [</span><br><span class="line">         </span><br><span class="line">         &#123;</span><br><span class="line">             &quot;name&quot;: &quot;(gdb) Launch&quot;, </span><br><span class="line">             &quot;type&quot;: &quot;cppdbg&quot;, </span><br><span class="line">             &quot;request&quot;: &quot;launch&quot;,</span><br><span class="line">             &quot;targetArchitecture&quot;: &quot;x86&quot;,</span><br><span class="line">             &quot;program&quot;: &quot;$&#123;file&#125;.exe&quot;, </span><br><span class="line">             &quot;miDebuggerPath&quot;: &quot;C:\\mingw64\\bin\\gdb.exe&quot;, // 注意这里要与本机MinGw的路径对应</span><br><span class="line">             &quot;args&quot;: [], </span><br><span class="line">             &quot;stopAtEntry&quot;: false, </span><br><span class="line">             &quot;cwd&quot;: &quot;$&#123;workspaceRoot&#125;&quot;,</span><br><span class="line">             &quot;externalConsole&quot;: true, </span><br><span class="line">             &quot;preLaunchTask&quot;: &quot;g++&quot;</span><br><span class="line">         &#125;</span><br><span class="line">     ]</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">//settings.json//文件名(4)</span><br><span class="line"> &#123;</span><br><span class="line">    &quot;files.associations&quot;: &#123;</span><br><span class="line">        &quot;array&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;atomic&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;*.tcc&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;bitset&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cctype&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cfenv&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;chrono&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cinttypes&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;clocale&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cmath&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;codecvt&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;complex&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;condition_variable&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;csetjmp&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;csignal&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cstdarg&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cstddef&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cstdint&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cstdio&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cstdlib&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cstring&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;ctime&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cuchar&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cwchar&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;cwctype&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;deque&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;forward_list&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;list&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;unordered_map&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;unordered_set&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;vector&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;exception&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;fstream&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;functional&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;future&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;initializer_list&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;iomanip&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;iosfwd&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;iostream&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;istream&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;limits&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;memory&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;mutex&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;new&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;ostream&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;numeric&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;ratio&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;scoped_allocator&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;shared_mutex&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;sstream&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;stdexcept&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;streambuf&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;system_error&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;thread&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;type_traits&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;tuple&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;typeindex&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;typeinfo&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;utility&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;valarray&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;queue&quot;: &quot;cpp&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;python.linting.pylintEnabled&quot;: true</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//tasks.json//文件夹(5)</span><br><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.1.0&quot;,</span><br><span class="line">    &quot;command&quot;: &quot;g++&quot;,</span><br><span class="line">    &quot;isShellCommand&quot;: true,</span><br><span class="line">    &quot;showOutput&quot;: &quot;always&quot;,</span><br><span class="line">    &quot;args&quot;: [&quot;-g&quot;,&quot;$&#123;file&#125;&quot;,&quot;-include&quot;,&quot;$&#123;workspaceRoot&#125;\\.vscode\\head.h&quot;,&quot;-o&quot;,&quot;$&#123;file&#125;.exe&quot;], //修改的是这一行，添加了-include命令，预编译头文件</span><br><span class="line">    &quot;problemMatcher&quot;: &#123;</span><br><span class="line">        &quot;owner&quot;: &quot;cpp&quot;,</span><br><span class="line">        &quot;fileLocation&quot;: [&quot;relative&quot;, &quot;$&#123;workspaceRoot&#125;&quot;],</span><br><span class="line">        &quot;pattern&quot;: &#123;</span><br><span class="line">            &quot;regexp&quot;: &quot;^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$&quot;,</span><br><span class="line">            &quot;file&quot;: 1,</span><br><span class="line">            &quot;line&quot;: 2,</span><br><span class="line">            &quot;column&quot;: 3,</span><br><span class="line">            &quot;severity&quot;: 4,</span><br><span class="line">            &quot;message&quot;: 5</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/23/luogu4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1070,11 +1234,26 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-23 10:04:53" itemprop="dateModified" datetime="2019-07-23T10:04:53+08:00">2019-07-23</time>
+                <time title="修改时间：2019-08-04 21:42:44" itemprop="dateModified" datetime="2019-08-04T21:42:44+08:00">2019-08-04</time>
               </span>
             
           
 
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/其它/" itemprop="url" rel="index"><span itemprop="name">其它</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1224,7 +1403,36 @@
           
 
           
+            
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-04 21:42:35" itemprop="dateModified" datetime="2019-08-04T21:42:35+08:00">2019-08-04</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/其它/" itemprop="url" rel="index"><span itemprop="name">其它</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1360,7 +1568,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1379,7 +1587,9 @@
         
           
         
-        <span class="site-state-item-count">1</span>
+          
+        
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -1398,7 +1608,9 @@
         
           
         
-        <span class="site-state-item-count">1</span>
+          
+        
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
