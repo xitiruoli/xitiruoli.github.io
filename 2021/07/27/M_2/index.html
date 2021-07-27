@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+
+  <meta name="description" content="Python第二章变量和简单数据类型2.1运行hello_word.py时发生了什么语法突出：编写程序时，编辑器会以各种方式突出程序的不同部分。例如：将函数的名称print()，和非python代码的部分，用不同颜色区分。 2.2变量12message = &quot;Hello Python word&quot;print (message)  2.2.1变量的命名和使用 变量名只包含字母，数字和下划线。变量名能以">
+<meta name="keywords" content="洛谷-新手村">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python语言基础">
+<meta property="og:url" content="http://yoursite.com/2021/07/27/M_2/index.html">
+<meta property="og:site_name" content="zhaoyu-blog">
+<meta property="og:description" content="Python第二章变量和简单数据类型2.1运行hello_word.py时发生了什么语法突出：编写程序时，编辑器会以各种方式突出程序的不同部分。例如：将函数的名称print()，和非python代码的部分，用不同颜色区分。 2.2变量12message = &quot;Hello Python word&quot;print (message)  2.2.1变量的命名和使用 变量名只包含字母，数字和下划线。变量名能以">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2021-07-27T14:30:27.585Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python语言基础">
+<meta name="twitter:description" content="Python第二章变量和简单数据类型2.1运行hello_word.py时发生了什么语法突出：编写程序时，编辑器会以各种方式突出程序的不同部分。例如：将函数的名称print()，和非python代码的部分，用不同颜色区分。 2.2变量12message = &quot;Hello Python word&quot;print (message)  2.2.1变量的命名和使用 变量名只包含字母，数字和下划线。变量名能以">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/2021/07/27/M_2/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  
+  <title>Python语言基础 | zhaoyu-blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">zhaoyu-blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/07/27/M_2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵宇">
+      <meta itemprop="description" content="君子乾乾,终日,夕惕若厉,无咎。">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zhaoyu-blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Python语言基础
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2021-07-27 22:27:46 / 修改时间：22:30:27" itemprop="dateCreated datePublished" datetime="2021-07-27T22:27:46+08:00">2021-07-27</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/编程语言/" itemprop="url" rel="index"><span itemprop="name">编程语言</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="第二章变量和简单数据类型"><a href="#第二章变量和简单数据类型" class="headerlink" title="第二章变量和简单数据类型"></a>第二章变量和简单数据类型</h2><h3 id="2-1运行hello-word-py时发生了什么"><a href="#2-1运行hello-word-py时发生了什么" class="headerlink" title="2.1运行hello_word.py时发生了什么"></a>2.1运行hello_word.py时发生了什么</h3><p><strong>语法突出</strong>：编写程序时，编辑器会以各种方式突出程序的不同部分。例如：将函数的名称print()，和非python代码的部分，用不同颜色区分。</p>
+<h3 id="2-2变量"><a href="#2-2变量" class="headerlink" title="2.2变量"></a>2.2变量</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">message = <span class="string">"Hello Python word"</span></span><br><span class="line"><span class="keyword">print</span> (message)</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-1变量的命名和使用"><a href="#2-2-1变量的命名和使用" class="headerlink" title="2.2.1变量的命名和使用"></a>2.2.1变量的命名和使用</h4><ul>
+<li>变量名只包含字母，数字和下划线。变量名能以字母或下划线打头，但不能以数字打头。</li>
+<li>变量名不能包含空格，但能使用下划线来分隔其中的单词。</li>
+<li>不要将Python关键字和函数名用作变量名</li>
+<li>变量名应既简短又具有描述性。</li>
+<li>慎用小写字母l和大写字母O，因为可能被人错看为数字1和0。</li>
+</ul>
+<p><strong>注意</strong>：就目前而言，应使用小写的Python 变量名。虽然在变量名中使用大写字母不会导致错误，但大写字母在变量名中具有特殊含义。</p>
+<h4 id="2-2-2使用变量时避免命名错误"><a href="#2-2-2使用变量时避免命名错误" class="headerlink" title="2.2.2使用变量时避免命名错误"></a>2.2.2使用变量时避免命名错误</h4><h4 id="2-2-3变量是标签"><a href="#2-2-3变量是标签" class="headerlink" title="2.2.3变量是标签"></a>2.2.3变量是标签</h4><p>变量常被描述为可用与存储值的盒子。</p>
+<p>一种好的多的定义是：变量是可以赋给值的标签，也可以说变量指向特定的值。</p>
+<h3 id="2-3字符串"><a href="#2-3字符串" class="headerlink" title="2.3字符串"></a>2.3字符串</h3><p><strong>字符串</strong>：就是一系列字符。在Python中，用引号括起的都是字符串，其中的引号可以是单引号也可以是双引号。</p>
+<h4 id="2-3-1使用方法修改字符串的大小写"><a href="#2-3-1使用方法修改字符串的大小写" class="headerlink" title="2.3.1使用方法修改字符串的大小写"></a>2.3.1使用方法修改字符串的大小写</h4><p><strong>方法title()</strong>：以首字母大写的方式显示每个单词。</p>
+<p><strong>方法upper()</strong>：字符串改为全部大写。</p>
+<p><strong>方法lower()</strong>：字符串改为全部小写。</p>
+<p>在存储数据时，有时会无法依靠用户来提供正确的大小写，因此需要将字符串先转换为小写，再存储它们。以后需要显示这些信息时，在转换为最适合的大小写。</p>
+<h4 id="2-3-2在字符串中使用变量"><a href="#2-3-2在字符串中使用变量" class="headerlink" title="2.3.2在字符串中使用变量"></a>2.3.2在字符串中使用变量</h4><p>在字符串中插入变量的值，可在前引号前加上字符 f ，再将要插入的变量放入花括号内。这样， Python在显示字符串时，将把每个变量都替换为其值。</p>
+<p>这字符串名为 f字符串。f时format(设置格式)的简写，因为Python 通过把花括号内的变量来替换为其值来设置字符串的格式。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">first_name = <span class="string">"ada"</span></span><br><span class="line">last_name = <span class="string">"lovelace"</span></span><br><span class="line">full_name = <span class="string">f"<span class="subst">&#123;first_name&#125;</span> <span class="subst">&#123;last_name&#125;</span>"</span></span><br><span class="line"><span class="keyword">print</span> (full_name)</span><br></pre></td></tr></table></figure>
+
+<p><strong>注</strong>：因为两个大括号中间有空格，输出的结果中ada和lovelace之间才有空格。本质上为a空格b</p>
+<p><strong>注意</strong>：f字符串是Python3.6引入的。如果使用的是Python3.5或更早的版本，需要用format()方法。要使用方法format()，可在圆括号内列出要在字符串中使用的变量。对于每个变量，都通过一对花括号来引用。这样将按照顺序将这些花括号替换为圆括号内列出的变量的值，如下：</p>
+<p>full_name = “{} {}”.format(first_name,last_name)</p>
+<h4 id="2-3-3使用制表符或换行符来添加空白"><a href="#2-3-3使用制表符或换行符来添加空白" class="headerlink" title="2.3.3使用制表符或换行符来添加空白"></a>2.3.3使用制表符或换行符来添加空白</h4><p><strong>空白</strong>：在编程中，空白泛指任何非打印字符，如空格、制表符和换行符。可以使用空白来组织输出，让用户阅读起来更容易。</p>
+<ul>
+<li>要在字符串中添加制表符，可以使用字符组合\t</li>
+<li>要在字符串中添加换行符，可使用字符组合\n</li>
+</ul>
+<h4 id="2-3-4删除空白"><a href="#2-3-4删除空白" class="headerlink" title="2.3.4删除空白"></a>2.3.4删除空白</h4><p>Python能够找出字符串开头和末尾多余的空白。这些剥除函数最常用于在存储用户输入前对其进行清理。</p>
+<p>要确保字符串末尾没有空白，可以使用方法rstrip()。</p>
+<p>剔除字符串开头的空白，可以使用方法lstrip()。</p>
+<p>同时剔除字符串两边的空白，可以用strip()。</p>
+<h4 id="2-3-5使用字符串时避免语法错误"><a href="#2-3-5使用字符串时避免语法错误" class="headerlink" title="2.3.5使用字符串时避免语法错误"></a>2.3.5使用字符串时避免语法错误</h4><p>语法错误，例如，在单引号中有 撇号。</p>
+<h3 id="2-4数"><a href="#2-4数" class="headerlink" title="2.4数"></a>2.4数</h3><h4 id="2-4-1整数"><a href="#2-4-1整数" class="headerlink" title="2.4.1整数"></a>2.4.1整数</h4><p>Python用两个乘号(**)表示乘方运算。</p>
+<h4 id="2-4-2浮点数"><a href="#2-4-2浮点数" class="headerlink" title="2.4.2浮点数"></a>2.4.2浮点数</h4><p>Python将所有带小数点的数称为浮点数。</p>
+<h4 id="2-4-3整数和浮点数"><a href="#2-4-3整数和浮点数" class="headerlink" title="2.4.3整数和浮点数"></a>2.4.3整数和浮点数</h4><p>将任意两个数相除时，结果总是浮点数，即便这两个数都是整数且能整除。</p>
+<p>在其他任何运算中，如果一个操作数是整数，另一个操作数是浮点数，结果也总是浮点数。</p>
+<p>无论是哪种运算，只要有操作数是浮点数，Python默认得到的总是浮点数，即便结果原本为整数也是如此。</p>
+<h4 id="2-4-4数中的下划线"><a href="#2-4-4数中的下划线" class="headerlink" title="2.4.4数中的下划线"></a>2.4.4数中的下划线</h4><p>书写很大的数时，可使用下划线将其中的数字分组。例如：14_000_000_000。当打印这种使用下划线定义的数时，Python不会打印其中的下划线。将数字分组时，即便不是将每三位分成一组，也不会影响最终的值。这种方法适用于整数和浮点数，但只有Python3.6和更高的版本支持。</p>
+<h4 id="2-4-5同时给多个变量复制"><a href="#2-4-5同时给多个变量复制" class="headerlink" title="2.4.5同时给多个变量复制"></a>2.4.5同时给多个变量复制</h4><p>可在一行代码中给多个变量赋值，这有助于缩短程序并提高其可读性。这种做法最常用于将一些列数赋值给一组变量。<br>例如：x,y,z = 0,0,0</p>
+<p>这样做时，需要用逗号将变量名分开，对于要赋给变量的值也需同样处理。</p>
+<p>Python将按顺序将每个值赋给对应的变量。只要变量和值的个数相同，Python就能正确地将他们关联起来。</p>
+<h4 id="2-4-6常量"><a href="#2-4-6常量" class="headerlink" title="2.4.6常量"></a>2.4.6常量</h4><p><strong>常量</strong>类似于变量，但其值在程序的整个生命周期内保持不变。Python没有内置的常量类型，但Python程序员会使用全大写来指出应将某个变量视为常量，其值应始终保持不变。</p>
+<h3 id="2-5注释"><a href="#2-5注释" class="headerlink" title="2.5注释"></a>2.5注释</h3><h4 id="2-5-1如何编写注释"><a href="#2-5-1如何编写注释" class="headerlink" title="2.5.1如何编写注释"></a>2.5.1如何编写注释</h4><p>注释用井号（#）标识。</p>
+<h4 id="2-5-2该编写什么样的注释"><a href="#2-5-2该编写什么样的注释" class="headerlink" title="2.5.2该编写什么样的注释"></a>2.5.2该编写什么样的注释</h4><h3 id="2-6Python之禅"><a href="#2-6Python之禅" class="headerlink" title="2.6Python之禅"></a>2.6Python之禅</h3><p>在Python终端会话中执行命令 import this，可以浏览其指导原则。</p>
+
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/洛谷-新手村/" rel="tag"># 洛谷-新手村</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/04/vs code/" rel="next" title="vs code 的配置文件">
+                <i class="fa fa-chevron-left"></i> vs code 的配置文件
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+  <p class="site-author-name" itemprop="name">赵宇</p>
+  <div class="site-description motion-element" itemprop="description">君子乾乾,终日,夕惕若厉,无咎。</div>
+</div>
+
+
+  <nav class="site-state motion-element">
+    
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+          
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python"><span class="nav-number">1.</span> <span class="nav-text">Python</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章变量和简单数据类型"><span class="nav-number">1.1.</span> <span class="nav-text">第二章变量和简单数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1运行hello-word-py时发生了什么"><span class="nav-number">1.1.1.</span> <span class="nav-text">2.1运行hello_word.py时发生了什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2变量"><span class="nav-number">1.1.2.</span> <span class="nav-text">2.2变量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1变量的命名和使用"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">2.2.1变量的命名和使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-2使用变量时避免命名错误"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">2.2.2使用变量时避免命名错误</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-3变量是标签"><span class="nav-number">1.1.2.3.</span> <span class="nav-text">2.2.3变量是标签</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3字符串"><span class="nav-number">1.1.3.</span> <span class="nav-text">2.3字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-1使用方法修改字符串的大小写"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">2.3.1使用方法修改字符串的大小写</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-2在字符串中使用变量"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">2.3.2在字符串中使用变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-3使用制表符或换行符来添加空白"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">2.3.3使用制表符或换行符来添加空白</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-4删除空白"><span class="nav-number">1.1.3.4.</span> <span class="nav-text">2.3.4删除空白</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-5使用字符串时避免语法错误"><span class="nav-number">1.1.3.5.</span> <span class="nav-text">2.3.5使用字符串时避免语法错误</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4数"><span class="nav-number">1.1.4.</span> <span class="nav-text">2.4数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-1整数"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">2.4.1整数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-2浮点数"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">2.4.2浮点数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-3整数和浮点数"><span class="nav-number">1.1.4.3.</span> <span class="nav-text">2.4.3整数和浮点数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-4数中的下划线"><span class="nav-number">1.1.4.4.</span> <span class="nav-text">2.4.4数中的下划线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-5同时给多个变量复制"><span class="nav-number">1.1.4.5.</span> <span class="nav-text">2.4.5同时给多个变量复制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-6常量"><span class="nav-number">1.1.4.6.</span> <span class="nav-text">2.4.6常量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5注释"><span class="nav-number">1.1.5.</span> <span class="nav-text">2.5注释</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-1如何编写注释"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">2.5.1如何编写注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-2该编写什么样的注释"><span class="nav-number">1.1.5.2.</span> <span class="nav-text">2.5.2该编写什么样的注释</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-6Python之禅"><span class="nav-number">1.1.6.</span> <span class="nav-text">2.6Python之禅</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">赵宇</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+</body>
+</html>

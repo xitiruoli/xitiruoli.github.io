@@ -313,6 +313,217 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/07/27/M_2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵宇">
+      <meta itemprop="description" content="君子乾乾,终日,夕惕若厉,无咎。">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zhaoyu-blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2021/07/27/M_2/" class="post-title-link" itemprop="url">Python语言基础</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2021-07-27 22:27:46 / 修改时间：22:30:27" itemprop="dateCreated datePublished" datetime="2021-07-27T22:27:46+08:00">2021-07-27</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/编程语言/" itemprop="url" rel="index"><span itemprop="name">编程语言</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="第二章变量和简单数据类型"><a href="#第二章变量和简单数据类型" class="headerlink" title="第二章变量和简单数据类型"></a>第二章变量和简单数据类型</h2><h3 id="2-1运行hello-word-py时发生了什么"><a href="#2-1运行hello-word-py时发生了什么" class="headerlink" title="2.1运行hello_word.py时发生了什么"></a>2.1运行hello_word.py时发生了什么</h3><p><strong>语法突出</strong>：编写程序时，编辑器会以各种方式突出程序的不同部分。例如：将函数的名称print()，和非python代码的部分，用不同颜色区分。</p>
+<h3 id="2-2变量"><a href="#2-2变量" class="headerlink" title="2.2变量"></a>2.2变量</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">message = <span class="string">"Hello Python word"</span></span><br><span class="line"><span class="keyword">print</span> (message)</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-1变量的命名和使用"><a href="#2-2-1变量的命名和使用" class="headerlink" title="2.2.1变量的命名和使用"></a>2.2.1变量的命名和使用</h4><ul>
+<li>变量名只包含字母，数字和下划线。变量名能以字母或下划线打头，但不能以数字打头。</li>
+<li>变量名不能包含空格，但能使用下划线来分隔其中的单词。</li>
+<li>不要将Python关键字和函数名用作变量名</li>
+<li>变量名应既简短又具有描述性。</li>
+<li>慎用小写字母l和大写字母O，因为可能被人错看为数字1和0。</li>
+</ul>
+<p><strong>注意</strong>：就目前而言，应使用小写的Python 变量名。虽然在变量名中使用大写字母不会导致错误，但大写字母在变量名中具有特殊含义。</p>
+<h4 id="2-2-2使用变量时避免命名错误"><a href="#2-2-2使用变量时避免命名错误" class="headerlink" title="2.2.2使用变量时避免命名错误"></a>2.2.2使用变量时避免命名错误</h4><h4 id="2-2-3变量是标签"><a href="#2-2-3变量是标签" class="headerlink" title="2.2.3变量是标签"></a>2.2.3变量是标签</h4><p>变量常被描述为可用与存储值的盒子。</p>
+<p>一种好的多的定义是：变量是可以赋给值的标签，也可以说变量指向特定的值。</p>
+<h3 id="2-3字符串"><a href="#2-3字符串" class="headerlink" title="2.3字符串"></a>2.3字符串</h3><p><strong>字符串</strong>：就是一系列字符。在Python中，用引号括起的都是字符串，其中的引号可以是单引号也可以是双引号。</p>
+<h4 id="2-3-1使用方法修改字符串的大小写"><a href="#2-3-1使用方法修改字符串的大小写" class="headerlink" title="2.3.1使用方法修改字符串的大小写"></a>2.3.1使用方法修改字符串的大小写</h4><p><strong>方法title()</strong>：以首字母大写的方式显示每个单词。</p>
+<p><strong>方法upper()</strong>：字符串改为全部大写。</p>
+<p><strong>方法lower()</strong>：字符串改为全部小写。</p>
+<p>在存储数据时，有时会无法依靠用户来提供正确的大小写，因此需要将字符串先转换为小写，再存储它们。以后需要显示这些信息时，在转换为最适合的大小写。</p>
+<h4 id="2-3-2在字符串中使用变量"><a href="#2-3-2在字符串中使用变量" class="headerlink" title="2.3.2在字符串中使用变量"></a>2.3.2在字符串中使用变量</h4><p>在字符串中插入变量的值，可在前引号前加上字符 f ，再将要插入的变量放入花括号内。这样， Python在显示字符串时，将把每个变量都替换为其值。</p>
+<p>这字符串名为 f字符串。f时format(设置格式)的简写，因为Python 通过把花括号内的变量来替换为其值来设置字符串的格式。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">first_name = <span class="string">"ada"</span></span><br><span class="line">last_name = <span class="string">"lovelace"</span></span><br><span class="line">full_name = <span class="string">f"<span class="subst">&#123;first_name&#125;</span> <span class="subst">&#123;last_name&#125;</span>"</span></span><br><span class="line"><span class="keyword">print</span> (full_name)</span><br></pre></td></tr></table></figure>
+
+<p><strong>注</strong>：因为两个大括号中间有空格，输出的结果中ada和lovelace之间才有空格。本质上为a空格b</p>
+<p><strong>注意</strong>：f字符串是Python3.6引入的。如果使用的是Python3.5或更早的版本，需要用format()方法。要使用方法format()，可在圆括号内列出要在字符串中使用的变量。对于每个变量，都通过一对花括号来引用。这样将按照顺序将这些花括号替换为圆括号内列出的变量的值，如下：</p>
+<p>full_name = “{} {}”.format(first_name,last_name)</p>
+<h4 id="2-3-3使用制表符或换行符来添加空白"><a href="#2-3-3使用制表符或换行符来添加空白" class="headerlink" title="2.3.3使用制表符或换行符来添加空白"></a>2.3.3使用制表符或换行符来添加空白</h4><p><strong>空白</strong>：在编程中，空白泛指任何非打印字符，如空格、制表符和换行符。可以使用空白来组织输出，让用户阅读起来更容易。</p>
+<ul>
+<li>要在字符串中添加制表符，可以使用字符组合\t</li>
+<li>要在字符串中添加换行符，可使用字符组合\n</li>
+</ul>
+<h4 id="2-3-4删除空白"><a href="#2-3-4删除空白" class="headerlink" title="2.3.4删除空白"></a>2.3.4删除空白</h4><p>Python能够找出字符串开头和末尾多余的空白。这些剥除函数最常用于在存储用户输入前对其进行清理。</p>
+<p>要确保字符串末尾没有空白，可以使用方法rstrip()。</p>
+<p>剔除字符串开头的空白，可以使用方法lstrip()。</p>
+<p>同时剔除字符串两边的空白，可以用strip()。</p>
+<h4 id="2-3-5使用字符串时避免语法错误"><a href="#2-3-5使用字符串时避免语法错误" class="headerlink" title="2.3.5使用字符串时避免语法错误"></a>2.3.5使用字符串时避免语法错误</h4><p>语法错误，例如，在单引号中有 撇号。</p>
+<h3 id="2-4数"><a href="#2-4数" class="headerlink" title="2.4数"></a>2.4数</h3><h4 id="2-4-1整数"><a href="#2-4-1整数" class="headerlink" title="2.4.1整数"></a>2.4.1整数</h4><p>Python用两个乘号(**)表示乘方运算。</p>
+<h4 id="2-4-2浮点数"><a href="#2-4-2浮点数" class="headerlink" title="2.4.2浮点数"></a>2.4.2浮点数</h4><p>Python将所有带小数点的数称为浮点数。</p>
+<h4 id="2-4-3整数和浮点数"><a href="#2-4-3整数和浮点数" class="headerlink" title="2.4.3整数和浮点数"></a>2.4.3整数和浮点数</h4><p>将任意两个数相除时，结果总是浮点数，即便这两个数都是整数且能整除。</p>
+<p>在其他任何运算中，如果一个操作数是整数，另一个操作数是浮点数，结果也总是浮点数。</p>
+<p>无论是哪种运算，只要有操作数是浮点数，Python默认得到的总是浮点数，即便结果原本为整数也是如此。</p>
+<h4 id="2-4-4数中的下划线"><a href="#2-4-4数中的下划线" class="headerlink" title="2.4.4数中的下划线"></a>2.4.4数中的下划线</h4><p>书写很大的数时，可使用下划线将其中的数字分组。例如：14_000_000_000。当打印这种使用下划线定义的数时，Python不会打印其中的下划线。将数字分组时，即便不是将每三位分成一组，也不会影响最终的值。这种方法适用于整数和浮点数，但只有Python3.6和更高的版本支持。</p>
+<h4 id="2-4-5同时给多个变量复制"><a href="#2-4-5同时给多个变量复制" class="headerlink" title="2.4.5同时给多个变量复制"></a>2.4.5同时给多个变量复制</h4><p>可在一行代码中给多个变量赋值，这有助于缩短程序并提高其可读性。这种做法最常用于将一些列数赋值给一组变量。<br>例如：x,y,z = 0,0,0</p>
+<p>这样做时，需要用逗号将变量名分开，对于要赋给变量的值也需同样处理。</p>
+<p>Python将按顺序将每个值赋给对应的变量。只要变量和值的个数相同，Python就能正确地将他们关联起来。</p>
+<h4 id="2-4-6常量"><a href="#2-4-6常量" class="headerlink" title="2.4.6常量"></a>2.4.6常量</h4><p><strong>常量</strong>类似于变量，但其值在程序的整个生命周期内保持不变。Python没有内置的常量类型，但Python程序员会使用全大写来指出应将某个变量视为常量，其值应始终保持不变。</p>
+<h3 id="2-5注释"><a href="#2-5注释" class="headerlink" title="2.5注释"></a>2.5注释</h3><h4 id="2-5-1如何编写注释"><a href="#2-5-1如何编写注释" class="headerlink" title="2.5.1如何编写注释"></a>2.5.1如何编写注释</h4><p>注释用井号（#）标识。</p>
+<h4 id="2-5-2该编写什么样的注释"><a href="#2-5-2该编写什么样的注释" class="headerlink" title="2.5.2该编写什么样的注释"></a>2.5.2该编写什么样的注释</h4><h3 id="2-6Python之禅"><a href="#2-6Python之禅" class="headerlink" title="2.6Python之禅"></a>2.6Python之禅</h3><p>在Python终端会话中执行命令 import this，可以浏览其指导原则。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/04/vs code/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1568,7 +1779,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1649,7 +1860,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -1806,6 +2017,5 @@
 
 
   
-
 </body>
 </html>
